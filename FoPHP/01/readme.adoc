@@ -1,0 +1,38 @@
+= Installation and Setup
+
+In short that is about installing and testing 
+
+More info: https://docs.haskellstack.org/en/stable/README/#how-to-install[How to install]
+
+== Installing Stack on Linux
+
+Installing on Ubuntu. Most straightforward way
+
+----
+curl -sSL https://get.haskellstack.org/ | sh
+
+#check
+which stack
+----
+
+
+Stack will place the binaries it builds in "/home/$USER/.local/bin", so you might want to add the folder to the path.
+
+----
+export PATH=$PATH:"/home/$USER/.local/bin"
+----
+
+== Create new program, build and exec
+
+
+----
+stack new hello-world simple --resolver=lts-7.8
+cd hello-world
+stack build
+stack exec hello-world
+----
+
+To clean the built artifacts, we can run `stack clean` or `stack purge`.
+
+ 
+

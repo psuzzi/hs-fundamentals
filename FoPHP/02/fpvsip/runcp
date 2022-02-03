@@ -1,0 +1,4 @@
+# pass argument $1 filename
+fname="${1%.*}"
+g++ -o "$fname.cp.o" "$fname.cpp" -std=c++17 && "./$fname.cp.o"
+

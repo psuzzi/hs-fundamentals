@@ -1,0 +1,3 @@
+# compile and run haskell program 
+fname="${1%.*}"
+stack ghc -- -o "$fname.hs.o" "$fname.hs" && ./$fname.hs.o

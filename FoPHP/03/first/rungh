@@ -1,0 +1,4 @@
+# pass argument $1 filename
+fname="${1%.*}"
+stack runghc "$fname.hs"
+

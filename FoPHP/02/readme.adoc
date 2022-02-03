@@ -1,0 +1,103 @@
+= Functional Programming in Haskell
+
+Functional Programming is an alternative method of computation based on evaluating mathematical functions. 
+
+Functional Programming (FP) is *declarative*, it describes _WHAT the program does_. That is in contrast with *imperative* programming (IP), that describes _HOW the program does something_.
+
+FP Programs
+
+- contains expressions and declaration 
+- avoid changing global state
+- avoid mutating data
+- avoid looping and instead employ recursion or higher-order abstraction
+
+Modern non-FP Programming Languages (PL) are often using features inspired from FP PL such Haskell. 
+
+More info: https://dev.to/ruizb/declarative-vs-imperative-4a7l[Declarative vs Imperative]
+
+== Examples
+
+The folder link:fpvsip[] contains examples of Haskell (FP) va C++ (IP) for performing basic operations needed in computing.
+
+=== Traversal
+
+Traversal or mapping: iterate over a collection of elements and perform an action on each element.
+
+[,haskell]
+----
+include::fpvsip/Traversal.hs[]
+----
+
+=== Reduction
+
+Reduction or folding: iterate over a collection of elements to compute some sort of summary (e.g. sum of all elements).
+
+[,haskell]
+----
+include::fpvsip/Reduction.hs[]
+----
+
+=== Filter
+
+Filtering: iterate over a collection of elements and extract a subset for which some predicate holds true.
+
+[,haskell]
+----
+include::fpvsip/Filter.hs[]
+----
+
+== Composition
+
+Composition: where we join two or more functions to produce some bigger function.
+
+[,haskell]
+----
+include::fpvsip/Composition.hs[]
+----
+
+== More examples
+
+The folder link:fphs[] contains more examples of programming in haskell. 
+
+Note
+* the command `stack runghc Filename.hs` takes the file and runs it like it is interpreted. 
+
+=== AddBrackets 
+
+This is a simple example of function declaration
+
+[,haskell]
+----
+include::fphs/AddBrackets.hs[]
+----
+
+=== Factorial
+
+Here the factorial is defined as recursive
+
+[,haskell]
+----
+include::fphs/Factorial.hs[]
+----
+
+=== Control Structure
+
+In haskell we can define functions by using pattern matching
+
+[,haskell]
+----
+include::fphs/ControlStructures.hs[]
+----
+
+
+=== Naming Conventions
+
+In haskell there are certain naming conventions
+
+- `Types`, `TypesConstructors`, `TypeClasses`, and `DataConstructors` starts with uppercase.
+- `functions`, `values` `variables` and `typeVariable` starts with lowercase
+
+[,haskell]
+----
+include::fphs/NamingConventions.hs[]
+----

@@ -1,0 +1,61 @@
+= FP vs IP
+
+Functional vs Imperative
+
+Functional Programming is an alternative method of computation based on executing functions in the mathematical model. 
+
+* Expressions and Declaration
+* Avoid change of global state, or mutate data
+* Avoid looping and, instead, use recursion
+
+Examples: the folder link:[fpvsip] contains examples Functional vs Imperative programming. Specifically, C++ vs Haskell for performing some basic computing operations listed below.
+
+== Traversal
+
+Traversal or mapping: iterate over a collection of elements and perform an action on each element.
+
+
+[source,haskell]
+----
+-- define a main function that evaluates to print the result of the map function
+main = print $ map (+10) [1, 2, 3]
+----
+
+== Reduction
+
+Reduction or folding: iterate over a collection of elements to compute some sort of summary (e.g. sum of all elements).
+
+[source,haskell]
+----
+-- foldr uses + as operator, 0 as initial value, [1,2,3] as list of values
+main = print $ foldr (+) 0 [1,2,3]
+----
+
+== Filter
+
+Filtering: iterate over a collection of elements and extract a subset for which some predicate holds true.
+
+[source,haskell]
+----
+-- filter uses > 3 as predicate selector, and [1,2,3,4,5,6] as list of values
+main = print $ filter (> 3) [1,2,3,4,5,6]
+----
+
+== Composition
+
+Composition: where we join two or more functions to produce some bigger function.
+
+[source,haskell]
+----
+-- composes two functions f and g using the dot operator
+
+f x = x +10
+
+g x = x * x
+
+main = print $ map (g . f) [1,2,3]
+----
+
+
+
+

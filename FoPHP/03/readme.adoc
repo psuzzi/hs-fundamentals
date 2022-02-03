@@ -1,0 +1,4 @@
+= Exploring Haskell
+
+More realistic programs incrementally built up from simpler programs.
+

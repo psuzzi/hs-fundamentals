@@ -1,0 +1,11 @@
+= FoPHP (Fundamentals of Practical Haskell Programming)
+
+See: https://subscription.packtpub.com/video/application-development/9781787288768/
+
+
+== Main contents
+
+* link:01[Installation and Setup] : prepare environment 
+* link:02[Functional Programming in Haskell] : programming quickstart
+* link:03[Exploring Haskell] : more realistic programs
+

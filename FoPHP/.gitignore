@@ -1,0 +1,14 @@
+
+# Compiled Object files
+*.o
+
+
+# Interface files
+*.hi
+
+
+# lock files
+*.lock
+
+# stack work directory
+.stack-work/
