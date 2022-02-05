@@ -9,6 +9,7 @@
 
 # lock files
 *.lock
+*.pantry-write-lock
 
 # stack work directory
-.stack-work/
+.stack-work/  

@@ -5,7 +5,7 @@ See: https://subscription.packtpub.com/video/application-development/97817872887
 
 == Main contents
 
-* link:01[Installation and Setup] : prepare environment 
-* link:02[Functional Programming in Haskell] : programming quickstart
-* link:03[Exploring Haskell] : more realistic programs
+* link:01[01. Installation and Setup] : prepare environment 
+* link:02[02. Functional Programming in Haskell] : programming quickstart
+* link:03[03. Exploring Haskell] : more realistic programs
 

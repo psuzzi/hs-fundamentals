@@ -2,3 +2,9 @@
 
 More realistic programs incrementally built up from simpler programs.
 
+When we run `stack` for running an Haskell program, the `stack.yaml` file is used as configuration file by stack itself, e.g. for telling which resolver to use.
+
+[,yaml]
+----
+include::first/stack.yaml[]
+----

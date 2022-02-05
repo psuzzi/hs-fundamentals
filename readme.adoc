@@ -1,0 +1,27 @@
+= Haskell Fundamentals
+
+Notes and exercises about programming in haskell.
+
+== Content
+
+So far, this is the content of this repository
+
+- link:FoPHP[Fundamentals of Practical Haskell Programming]
+
+
+== What to install 
+
+Kurzgesagt, this is how to setup the development environment to program in Haskell
+
+----
+# install stack and upgrade, as usually outdated
+curl -sSL https://get.haskellstack.org/ | sh
+stack upgrade
+# installs a version of sandboxed ghc
+stack setup
+
+# vscode needs to locate the ghc compiler on path
+sudo apt-get install haskell-platform
+----
+
+Besides, I also installed _VSCode_ with the Haskell extension.

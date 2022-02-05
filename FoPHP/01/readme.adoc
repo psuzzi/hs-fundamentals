@@ -8,6 +8,7 @@ More info: https://docs.haskellstack.org/en/stable/README/#how-to-install[How to
 
 Installing on Ubuntu. Most straightforward way
 
+[,bash]
 ----
 curl -sSL https://get.haskellstack.org/ | sh
 
@@ -18,13 +19,14 @@ which stack
 
 Stack will place the binaries it builds in "/home/$USER/.local/bin", so you might want to add the folder to the path.
 
+[,bash]
 ----
 export PATH=$PATH:"/home/$USER/.local/bin"
 ----
 
 == Create new program, build and exec
 
-
+[,bash]
 ----
 stack new hello-world simple --resolver=lts-7.8
 cd hello-world
@@ -34,5 +36,13 @@ stack exec hello-world
 
 To clean the built artifacts, we can run `stack clean` or `stack purge`.
 
+== Just interpret
+
+In case you have your `Program.hs` you can also just intepret and run it
+
+[,bash]
+----
+stack runghc Program.hs
+----
  
 

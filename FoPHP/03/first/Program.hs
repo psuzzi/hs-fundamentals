@@ -1,4 +1,7 @@
--- main has type IO
-main :: IO()
+-- main has type IO unit
+main :: IO ()
 -- main is putStrLn
-main = putStrLn "Hello world"
+main = do
+    -- content is drawn from readfile from numbers.txt
+    content <- readFile "numbers.txt"
+    putStrLn content
